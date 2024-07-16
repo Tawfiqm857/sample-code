@@ -1,0 +1,126 @@
+<html>
+    <head>
+        <title></title>
+        <style>
+            .fixed-header, .fixed-footer{
+  width: 100%;
+  position: fixed ;        
+  background: #130d42;
+  padding: 10px 0;
+  color: #fff;
+}
+.fixed-header{
+  top: 0;
+}
+.fixed-footer{
+  bottom: 0;
+}    
+
+.container p{
+        line-height: 200px; /* Create scrollbar to test positioning */
+    }
+              nav a{
+        color: #fff;
+        text-decoration: none;
+        padding: 7px 25px;
+        display: inline-block;
+    }
+        .headings { 
+            margin-top: 80px;
+        border-style: solid;
+        width: 700px;
+        height: 70px;
+        background-color: black;
+        color:aliceblue;
+        border-radius: 8px;
+  padding: 5px;
+            }
+            .h2s{
+
+                background-color: blue;
+                height:70px;
+                width: 750px;
+                border-radius: 8px;
+  padding: 5px;
+            }
+            .h3s{
+                background-color: aqua;
+                height: 150%;
+                width:850px;
+                border-radius: 8px;
+  padding: 5px;
+            }
+            [class="flex-container"] div{
+            display: flex;
+  background-color: DodgerBlue;
+  color: white;
+  width: 100px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  margin: 10px;
+  padding: 20px;
+  
+}
+.flex-container{
+    display: flex;
+    height: 400px;
+
+background-color: #1ebba3;
+}
+            body{
+                background-color:rgb(37, 38, 86) ;
+            }
+
+        </style>
+    </head>
+    <body>
+    <div class="fixed-header">
+        <div class="container">
+            <nav>
+                <a href="./assmt.html">Home</a>
+                <a href="./categories.html">Products</a>
+                <a href="./contacts1.html">Contact Us</a>
+            </nav>
+        </div>
+        </div>
+        <div class="headings">
+            <h1>HTML </h1>
+
+            <div class="h2s">
+                <h1>CSS </h1>
+
+                <div class="h3s">
+                    <h1>JAVA SCRIPT</h1>
+
+                        
+
+        </div>
+       
+
+        <div class="flex-container">
+
+            <div style="flex-grow: 8 ">1</div>
+            <div style="flex-grow: 1">2</div>
+            <div style="align-self: center">3</div>
+            <div style="align-self: flex-end">3</div>
+            <div style="flex-grow: 15">3</div>
+        
+        </div>
+      
+        <img src="../my folder/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHXlhDJlJbJBXcEfmdVvi6_Ki85as2k9vdfA&usqp=CAU">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+
+
+<div class="fixed-footer">
+    <div class="container">Copyright &copy; 2023 EliteTutorials</div>        
+</div>
+    </body>
+</html>
