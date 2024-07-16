@@ -109,7 +109,8 @@ Websites are stored or hosted on servers,<br /> which are known as special compu
             <a href="./assmt.html">Home</a> 
            <span> <a href="./categories.html">Basic Tutorials</a></span>    
             <a href="./contacts1.html">Contact Us</a>
-        <input type="search" placeholder="Search">
+        <input type="search" placeholder="Search"> <button onclick="performSearch()">Search</button>
+ 
 
         
         <a href="..//log-in.html">LOG IN</a>
@@ -194,5 +195,15 @@ Websites are stored or hosted on servers,<br /> which are known as special compu
 
 </script>
 <script src="https://kit.fontawesome.com/79e959c9b5.js" crossorigin="anonymous"></script>
-
+function performSearch() {
+            const query = document.getElementById('searchInput').value;
+            if (query) {
+                alert('You searched for: ' + query);
+                // You can add your search handling logic here
+                // For example, you can redirect to a search results page:
+                // window.location.href = 'search_results.html?query=' + encodeURIComponent(query);
+            } else {
+                alert('Please enter a search term');
+            }
+        }
 </body>
